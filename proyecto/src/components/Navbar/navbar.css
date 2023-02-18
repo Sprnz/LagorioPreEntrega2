@@ -1,0 +1,23 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(10, 9, 19);
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+}
+
+button:hover {background-color: aliceblue;
+color: black;}
+button {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    font-size: 15px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.brand {font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-style: italic;
+font-size: 20px;
+font-weight: 100;}
