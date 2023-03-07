@@ -1,9 +1,12 @@
 import "./itemListContainer.css"
 
-const ItemListContainer = ({texto}) => {
+const ItemListContainer = ({productos}) => {
 
     return (
-        <div className="items"><p>{texto}</p></div>
+        <div className="items">
+            {productos.map(productos => 
+            <h4 key={productos.id}>{productos.title}</h4>)}
+            </div>
     )
 }
 
