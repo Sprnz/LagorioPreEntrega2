@@ -6,7 +6,10 @@ const Navbar = () => {
 
         
         <nav className="contenedor">
+            <Link to="/">
             <p className="brand">MANDALAI</p>
+            </Link>
+            
             <Link to="/">
                 <button>Home</button>
             </Link>
