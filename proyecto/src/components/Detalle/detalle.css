@@ -1,0 +1,25 @@
+.card-container-detalle {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card-detalle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px;
+    padding: 15px;
+    background-color: rgba(196, 228, 255, 0.411);
+    width: 600px;
+    border-radius: 15px;
+
+}
+
+.card-detalle img {
+    width: 150px;
+    border-radius: 15px;
+}

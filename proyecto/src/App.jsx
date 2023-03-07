@@ -5,6 +5,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import Navbar from './components/Navbar/Navbar'
 import { Route, Routes } from "react-router-dom";
 import Home from './components/Home/Home';
+import { Detalle } from './components/Detalle/Detalle';
 
 
 
@@ -19,8 +20,6 @@ function App() {
   useEffect(() => {
     getProductos();
   }, [])
-
-  console.log(productos)
   
 
   return (
@@ -28,7 +27,8 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/productos" element={<ItemListContainer productos={productos}/>}/>        
+        <Route path="/productos" element={<ItemListContainer productos={productos}/>}/>
+        <Route path="/productos/:id" element={<Detalle productos={productos} />}/>
       </Routes>
     </div>
   )
