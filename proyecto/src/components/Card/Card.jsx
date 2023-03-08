@@ -10,7 +10,7 @@ export const Card = ({ productos }) => {
                     <h4>{productos.title}</h4>
                     <img src={productos.image} alt="" />
                     <p>{productos.description}</p>
-                    <p>{productos.price}</p>
+                    <p>${productos.price}</p>
                 </div>
             </Link>
         </div>
