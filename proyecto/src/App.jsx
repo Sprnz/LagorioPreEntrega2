@@ -8,6 +8,7 @@ import Home from './components/Home/Home';
 import { Detalle } from './components/Detalle/Detalle';
 import ProductosCat from './components/ProductosPorCat';
 import InnerCart from './components/InnerCart';
+import Checkout from './components/Checkout';
 
 
 
@@ -37,6 +38,7 @@ function App() {
         <Route path="/category/:category" element={<ProductosCat productos={productos} />} />
         <Route path="/category/:category/product/:id" element={<Detalle productos={productos} />} />
         <Route path="/ver carrito" element={<InnerCart productos={productos} />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </div>
   )

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const InnerCart = () => {
     const [productosEnCarrito, setProductosEnCarrito] = useState([]);
@@ -18,6 +19,7 @@ export const InnerCart = () => {
                     </li>
                 ))}
             </ul>
+            <Link to="/checkout"><button>Ir a pagar</button></Link>
         </div>
     );
 };
