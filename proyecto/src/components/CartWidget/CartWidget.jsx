@@ -1,14 +1,16 @@
 import "./cartWidget.css"
+import { Link } from "react-router-dom";
 
 export const CartWidget = () => {
     return (
-        <div className="cart-container">
+        <Link to="/ver carrito">
+            <div className="cart-container">
             <div className="cart"><p>🛒</p>
             </div>
             <div>
             <p className="notif">0</p>
             </div>
-        </div>
+        </div></Link>
     )
 }
 

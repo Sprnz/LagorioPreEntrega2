@@ -6,6 +6,11 @@ import Navbar from './components/Navbar/Navbar'
 import { Navigate, Route, Routes } from "react-router-dom";
 import Home from './components/Home/Home';
 import { Detalle } from './components/Detalle/Detalle';
+import ProductosCat from './components/ProductosPorCat';
+import InnerCart from './components/InnerCart';
+
+
+
 
 
 
@@ -20,16 +25,18 @@ function App() {
   useEffect(() => {
     getProductos();
   }, [])
-  
+
 
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <Routes>
-      <Route path="/" element={<Navigate to="home" />} />
-        <Route path="/home" element={<Home/>}/>
-        <Route path="/productos" element={<ItemListContainer productos={productos}/>}/>
-        <Route path="/productos/:id" element={<Detalle productos={productos} />}/>
+        <Route path="/" element={<Navigate to="home" />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/productos" element={<ItemListContainer productos={productos} />} />
+        <Route path="/category/:category" element={<ProductosCat productos={productos} />} />
+        <Route path="/category/:category/product/:id" element={<Detalle productos={productos} />} />
+        <Route path="/ver carrito" element={<InnerCart productos={productos} />} />
       </Routes>
     </div>
   )
